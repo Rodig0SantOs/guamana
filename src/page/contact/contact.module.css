@@ -1,0 +1,106 @@
+.container {
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: var(--bg-background);
+}
+
+.contactText {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em 0;
+
+  p {
+    color: var(--text-color);
+    line-height: 1.3;
+    padding: 0.5em 0;
+    font-family: var(--text-font);
+  }
+}
+
+.contactTitle {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: var(--title-color);
+  margin: 32px auto;
+}
+
+/* form contact */
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 40px auto;
+  width: 100%;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 1.4em;
+  border-radius: 4px;
+  background-color: var(--bg-background);
+  border: 1px solid var(--button-border);
+  font-family: var(--text-font);
+}
+
+.contactForm input,
+.contactForm textarea {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.contactForm textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.contactForm button {
+  width: 250px;
+  height: 48px;
+  padding: 1em 2em;
+  border: none;
+  background-color: var(--button-bg);
+  color: var(--text-run);
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.disabledButton {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.successMessage {
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.errorMessage {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+}
+
+.contactLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  color: var(--text-color);
+  font-weight: 600;
+  font-family: var(--text-font);
+  text-transform: capitalize;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contactForm button {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

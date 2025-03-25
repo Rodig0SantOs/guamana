@@ -1,0 +1,225 @@
+.container {
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background-color: var(--bg-background);
+}
+
+.contactText {
+  margin: 0 auto;
+  width: 80%;
+  padding: 1em 0;
+}
+
+.contactText p {
+  color: var(--text-color);
+  line-height: 1.3;
+  padding: 0.5em 0;
+  font-family: var(--text-font);
+}
+
+.contactTitle {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: var(--title-color);
+  margin: 32px auto;
+}
+
+/* Configuração dos cards */
+.content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.card {
+  width: 100%;
+  height: auto; /* Ajuste para altura automática */
+  background-color: var(--bg-background);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1em; /* Adiciona padding interno */
+}
+
+.cardEven {
+  flex-direction: row;
+}
+
+.cardOdd {
+  flex-direction: row-reverse;
+}
+
+.cardContent {
+  flex: 1;
+  padding: 1rem;
+  font-size: 1.2em;
+  color: var(--title-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7em;
+  text-transform: capitalize;
+  color: var(--text-color);
+  margin-bottom: 0.5em;
+  font-weight: 400;
+}
+
+.cardContent hr {
+  width: 100%;
+  border: 0.1em solid var(--button-border);
+}
+
+.cardContent p {
+  font-size: 1em;
+  color: var(--text-color);
+  line-height: 1.5;
+  padding: 1em 0;
+  font-family: var(--text-font);
+}
+
+.card img {
+  width: 40%; /* Ajusta a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4em;
+  background: var(--bg-light);
+  transition: background 0.3s ease-in-out;
+  padding: 0.5em; /* Adiciona padding interno */
+}
+
+.buttonContainer:hover {
+  background: var(--bg-hover);
+}
+
+.buttonContainer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center; /* Alinha o ícone e o link verticalmente */
+  gap: 0.5em; /* Adiciona espaçamento entre o ícone e o link */
+}
+
+.rightSection {
+  display: flex;
+  align-items: center; /* Centraliza o ícone verticalmente */
+}
+
+.icon {
+  background: var(--bg-action);
+  color: var(--text-button);
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.buttonContainer:hover .icon {
+  transform: scale(1.1);
+}
+
+.buttonLink {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--text-font);
+}
+
+.buttonContainer:hover .buttonLink {
+  color: var(--bg-action);
+}
+
+.lines {
+  width: 100%;
+  margin: 3.5em auto;
+  border: 0.1em solid var(--details);
+}
+
+/* Para telas menores que 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  .container {
+    padding-bottom: 1em;
+  }
+
+  .contactText {
+    width: 90%; /* Aumenta a largura do conteúdo */
+  }
+
+  .card {
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    height: auto; /* Altura automática */
+    padding: 1em; /* Adiciona padding interno */
+  }
+
+  .cardEven,
+  .cardOdd {
+    flex-direction: column; /* Sobrescreve a direção dos cards pares/ímpares */
+  }
+
+  .card img {
+    display: none;
+    /* width: 100%; Faz a imagem ocupar a largura total */
+    /* height: 200px; Define uma altura fixa para a imagem */
+    /* margin-top: 1em; Adiciona espaçamento acima da imagem */
+  }
+
+  .buttonContainer {
+    display: flex;
+    gap: 10px; /* Adiciona espaçamento entre os botões */
+  }
+
+  .cards {
+    flex-direction: column; /* Empilha os cards verticalmente */
+  }
+}
+
+/* Para telas menores que 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+  .contactText {
+    width: 95%; /* Aumenta a largura do conteúdo */
+  }
+
+  .contactTitle {
+    font-size: 1.5em; /* Reduz o tamanho do título */
+  }
+
+  .cardContent {
+    font-size: 1em; /* Reduz o tamanho da fonte do conteúdo */
+  }
+
+  .cardContent p {
+    font-size: 0.9em; /* Reduz o tamanho do texto */
+  }
+
+  .buttonLink {
+    font-size: 0.9em; /* Reduz o tamanho do texto do botão */
+  }
+}

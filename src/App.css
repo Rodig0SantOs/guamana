@@ -1,0 +1,68 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Define a altura igual à altura total da tela */
+  overflow: hidden; /* Evita rolagem desnecessária */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra toda a área sem distorcer */
+  display: block;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 1, 0, 0.65); /* Cor preta com 65% de opacidade */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 80%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: white; /* Cor do texto */
+  text-align: left; /* Cor do texto */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* Para não ocupar toda a largura */
+  max-width: 70%; /* Limite de largura */
+  margin: 0 auto; /* Centraliza o elemento */
+
+  h1 {
+    font-size: 48px; /* Tamanho do título */
+    margin-bottom: 4px;
+    font-family: var(--title-font);
+  }
+
+  p {
+    font-size: 24px; /* Tamanho da legenda */
+    font-family: var(--text-font);
+  }
+}
+
+/*mobile */
+
+@media (max-width: 768px) {
+  .text-overlay {
+    max-width: 100%;
+    top: 65%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+
+    h1 {
+      font-size: 32px;
+    }
+
+    hr {
+      width: 20%;
+    }
+  }
+}

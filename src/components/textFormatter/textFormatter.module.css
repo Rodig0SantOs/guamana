@@ -1,0 +1,11 @@
+.highlight {
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  /* Opcional: efeito hover para links */
+  .highlight[href]:hover {
+    opacity: 0.9;
+  }

@@ -1,0 +1,312 @@
+.headerContainer {
+  width: 100%;
+  background-color: var(--bg-header);
+  color: var(--title-cta);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* position: fixed;
+  z-index: 1; */
+
+  /*   position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; */
+}
+
+.containerHeader {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.headerContainer img {
+  width: 250px;
+  height: auto;
+  padding: 8px 0;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease-in-out;
+
+  margin: 8px 0;
+}
+
+.dropdown:hover {
+  background: rgba(255, 255, 255, 0.1); /* Efeito ao passar o mouse */
+}
+
+/* Estilização do menu dropdown */
+.dropdownMenu {
+  padding: 8px;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background: var(--bg-header);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  border-radius: 16px;
+  min-width: 90px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* Evita cliques quando invisível */
+  z-index: 1;
+}
+
+/* Mantém o menu visível ao passar o mouse */
+.dropdown:hover .dropdownMenu,
+.dropdownMenu:hover {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdownMenu li {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdownMenu li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Ícone do menu mobile */
+.mobileMenuIcon {
+  display: none; /* Esconde por padrão */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 1.3em;
+  background: var(--bg-header);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 8px 0;
+  border-radius: 6px;
+}
+
+/* Drawer Menu (Estilizado para deslizar da direita) */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  background: var(--bg-header); /* Cor de fundo escura */
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  transform: translateX(100%); /* Começa fora da tela */
+  transition: transform 0.3s ease-in-out;
+  z-index: 100; /* Sobrepõe tudo */
+}
+
+.mobileMenuLine {
+  width: 100%;
+  border: 1px solid var(--button-border) !important;
+  opacity: 0.2;
+  margin: 1.3em 0;
+}
+
+.mobileMenu ul {
+  list-style: none;
+}
+
+.mobileMenu ul li {
+  display: flex;
+  cursor: pointer;
+}
+
+.mobileMenu ul li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--text-run); /* Deixa os textos brancos */
+}
+
+/* Quando o menu estiver aberto */
+.mobileMenu.open {
+  transform: translateX(0); /* Move para dentro da tela */
+}
+
+.mobileMenu ul li {
+  margin-bottom: 16px;
+  padding: 8px;
+  font-size: 18px;
+  color: var(--text-run); /* Deixa os textos brancos */
+  cursor: pointer;
+  list-style-type: none;
+  border-radius: 4px;
+}
+
+.mobileMenu ul li:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.socialMedia li {
+  list-style: none;
+}
+
+.socialMedia li a {
+  color: var(--text-run);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+/* Botão de fechar */
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  align-self: flex-end;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  .srOnlyIcon {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    background: var(--bg-background);
+    border-radius: 50%;
+  }
+
+  .closeX {
+    font-size: 0.8em;
+    margin: 0;
+    color: var(--text-button);
+  }
+}
+
+/* Estilização do link de login */
+.login {
+  font-weight: bold;
+  color: var(--text-button);
+}
+
+/* Fundo escuro ao abrir o drawer */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* Fundo escuro semi-transparente */
+  z-index: 50; /* Sobrepõe tudo */
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 767px) {
+  .headerContainer {
+    padding: 0 10px;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .containerHeader {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .headerContainer img {
+    width: 180px; /* Reduz o tamanho do logo */
+  }
+
+  /* Esconde o menu normal */
+
+  /* Mostra o ícone do menu mobile */
+  .mobileMenuIcon {
+    display: flex;
+    font-size: 2rem;
+    color: var(--title-cta);
+  }
+
+  /* Ajustes no dropdown (se necessário) */
+
+  /* Ajustes no menu mobile */
+  .mobileMenu {
+    width: 80%; /* Ocupa 70% da tela */
+    background: var(--bg-header);
+  }
+
+  .mobileMenu ul li {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .headerContainer img {
+    width: 200px;
+  }
+
+  .mobileMenu {
+    width: 50%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .headerContainer img {
+    width: 160px; /* Tamanho menor para mobile */
+    padding: 5px 0;
+  }
+
+  .mobileMenuIcon {
+    font-size: 1.8rem; /* Ícone ligeiramente menor */
+  }
+
+  .menu {
+    display: none;
+  }
+}
