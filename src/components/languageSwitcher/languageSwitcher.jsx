@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BsGlobe, BsChevronDown } from "react-icons/bs";
-import style from "./LanguageSwitcher.module.css";
+import style from "./languageSwitcher.module.css";
 import { useLanguage } from "../../context/LanguageProvider";
 
 export const LanguageSwitcher = () => {
