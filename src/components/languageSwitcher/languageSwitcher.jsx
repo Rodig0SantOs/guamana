@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BsGlobe, BsChevronDown } from "react-icons/bs";
-import style from "./LanguageSwitcher.module.css";
+import styles from "./language.module.css";
 import { useLanguage } from "../../context/LanguageProvider";
 
 export const LanguageSwitcher = () => {
@@ -25,20 +25,20 @@ export const LanguageSwitcher = () => {
   };
 
   return showSwitcher ? (
-    <div className={style.container}>
+    <div className={styles.container}>
       <div
-        className={style.trigger}
+        className={styles.trigger}
         onMouseEnter={() => setIsOpen(true)}
         onMouseLeave={() => setIsOpen(false)}
         role="button"
         tabIndex={0}
       >
-        <BsGlobe className={style.icon} />
+        <BsGlobe className={styles.icon} />
         <span>{language.toUpperCase()}</span>
-        <BsChevronDown className={style.chevron} />
+        <BsChevronDown className={styles.chevron} />
 
         {isOpen && (
-          <ul className={style.dropdown}>
+          <ul className={styles.dropdown}>
             {Object.keys(languages).map(
               (lang) =>
                 lang !== language && (
