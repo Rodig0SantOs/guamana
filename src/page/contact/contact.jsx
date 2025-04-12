@@ -1,7 +1,7 @@
 import style from "./contact.module.css";
 import contact from "../../img/contact-us.jpg";
 
-import { initEmailJS, sendEmail } from "../../utils/emailService";
+import { sendEmail } from "../../utils/mailgridService";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "../../context/LanguageProvider";
@@ -20,9 +20,7 @@ const Contact = () => {
     message: "",
   });
 
-  useEffect(() => {
-    initEmailJS();
-  }, []);
+  // No seu handleSubmitForm, atualize para:
 
   const handleSubmitForm = async (e) => {
     e.preventDefault();
@@ -32,24 +30,21 @@ const Contact = () => {
     setMessageStatus(null);
 
     try {
-      const response = await sendEmail(formData);
-
-      if (response && response.status === 200) {
-        setMessageStatus("success");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
-      }
+      await sendEmail(formData);
+      setMessageStatus("success");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
     } catch (error) {
-      console.error("Erro ao enviar:", error);
+      console.error("Erro detalhado no envio:", error);
       setMessageStatus("error");
     } finally {
       setIsSending(false);
-      setTimeout(() => setMessageStatus(null), 5000); // Limpa mensagens após 5s
+      setTimeout(() => setMessageStatus(null), 5000);
     }
   };
 

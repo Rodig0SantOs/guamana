@@ -26,7 +26,7 @@ export const translations = {
         {
           id: "2",
           title: "Perícia Digital",
-          text: "Direcionada a advogados, empresas e organizações, este serviço lida com questões como disputas legais, vazamentos de dados, incidentes de segurança, fraudes corporativas e roubo de informações confidenciais. A STWBrasil possui o maior laboratório forense do Brasil, especializado na preservação, coleta e análise de evidências digitais.",
+          text: "Direcionada a advogados, empresas e organizações, este serviço lida com questões como disputas legais, vazamentos de dados, incidentes de segurança, fraudes corporativas e roubo de informações confidenciais. A Gumana possui o maior laboratório forense do Brasil, especializado na preservação, coleta e análise de evidências digitais.",
           image: "../../src/img/detective.jpg",
           buttonText: "Explore nossos serviços",
         },
@@ -70,7 +70,7 @@ export const translations = {
       },
 
       mediaActionCard: {
-        title: "Transforme dados em Justiça.",
+        title: "Transforme dados em Justiça",
         subtitle:
           "Transforme Dados em Justiça: Sua Segurança Digital Começa Aqui",
         text: "Na Gumana Forensics Technologies, entendemos que cada byte de informação pode ser a chave para resolver um caso, proteger sua empresa ou garantir a verdade. Seja para investigações complexas, proteção contra ciberameaças ou recuperação de dados críticos, nossa tecnologia de ponta e expertise forense estão à sua disposição.",
@@ -91,7 +91,7 @@ export const translations = {
         {
           id: 1,
           description:
-            "Em um mundo cada vez mais digital e interconectado, onde a fronteira entre o físico e o virtual se dissolve, nasceu a Gumana Forensics Technologies, uma empresa pioneira na interseção entre tecnologia, justiça e inovação. Fundada em 2015, a Gumana surgiu da visão de um grupo multidisciplinar de especialistas em ciência forense, engenharia de software e direito digital, unidos pela missão de combater crimes cibernéticos e desvendar verdades ocultas em um cenário tecnológico complexo. Hoje, a empresa é referência global em soluções forenses digitais, oferecendo ferramentas avançadas para investigações criminais, proteção de dados e análise de evidências digitais com precisão científica.",
+            "Em um mundo cada vez mais digital e interconectado, onde a fronteira entre o físico e o virtual se dissolve, nasceu a Gumana Forensics Technologies, uma empresa pioneira na interseção entre tecnologia, justiça e inovação. Fundada em 2025, a Gumana surgiu da visão de um grupo multidisciplinar de especialistas em ciência forense, engenharia de software e direito digital, unidos pela missão de combater crimes cibernéticos e desvendar verdades ocultas em um cenário tecnológico complexo. Hoje, a empresa é referência global em soluções forenses digitais, oferecendo ferramentas avançadas para investigações criminais, proteção de dados e análise de evidências digitais com precisão científica.",
         },
         {
           id: 2,
@@ -251,7 +251,7 @@ export const translations = {
         {
           id: "2",
           title: "Digital Forensics",
-          text: "Aimed at lawyers, companies and organizations, this service deals with issues such as legal disputes, data leaks, security incidents, corporate fraud and theft of confidential information. STWBrasil has the largest forensic laboratory in Brazil, specialized in the preservation, collection and analysis of digital evidence.",
+          text: "Aimed at lawyers, companies and organizations, this service deals with issues such as legal disputes, data leaks, security incidents, corporate fraud and theft of confidential information. Gumana has the largest forensic laboratory in Brazil, specialized in the preservation, collection and analysis of digital evidence.",
           image: "../../src/img/detective.jpg",
           buttonText: "Explore our services",
         },
@@ -295,7 +295,7 @@ export const translations = {
       },
 
       mediaActionCard: {
-        title: "Transform data into Justice.",
+        title: "Transform data into Justice",
         subtitle:
           "Transform Data into Justice: Your Digital Security Starts Here",
         text: "At Gumana Forensics Technologies, we understand that every byte of information can be the key to solving a case, protecting your company or ensuring the truth. Whether for complex investigations, protection against cyber threats or recovery of critical data, our cutting-edge technology and forensic expertise are at your disposal.",
@@ -315,7 +315,7 @@ export const translations = {
         {
           id: 1,
           description:
-            "In an increasingly digital and interconnected world, where the border between the physical and the virtual dissolves, Gumana Forensics Technologies was born, a pioneering company at the intersection between technology, justice and innovation. Founded in 2015, Gumana emerged from the vision of a multidisciplinary group of experts in forensic science, software engineering and digital law, united by the mission of combating cybercrime and uncovering hidden truths in a complex technological landscape. Today, the company is a global reference in digital forensic solutions, offering advanced tools for criminal investigations, data protection and analysis of digital evidence with scientific precision.",
+            "In an increasingly digital and interconnected world, where the border between the physical and the virtual dissolves, Gumana Forensics Technologies was born, a pioneering company at the intersection between technology, justice and innovation. Founded in 2025, Gumana emerged from the vision of a multidisciplinary group of experts in forensic science, software engineering and digital law, united by the mission of combating cybercrime and uncovering hidden truths in a complex technological landscape. Today, the company is a global reference in digital forensic solutions, offering advanced tools for criminal investigations, data protection and analysis of digital evidence with scientific precision.",
         },
         {
           id: 2,
@@ -474,7 +474,7 @@ export const translations = {
         {
           id: "2",
           title: "Digital Forensics",
-          text: "Aimed at lawyers, companies and organizations, this service deals with issues such as legal disputes, data leaks, security incidents, corporate fraud and theft of confidential information. STWBrasil has the largest forensic laboratory in Brazil, specialized in the preservation, collection and analysis of digital evidence.",
+          text: "Aimed at lawyers, companies and organizations, this service deals with issues such as legal disputes, data leaks, security incidents, corporate fraud and theft of confidential information. Gumana has the largest forensic laboratory in Brazil, specialized in the preservation, collection and analysis of digital evidence.",
           image: "../../src/img/detective.jpg",
           buttonText: "Explore our services",
         },
@@ -519,7 +519,7 @@ export const translations = {
       },
 
       mediaActionCard: {
-        title: "Transformar datos en Justicia.",
+        title: "Transformar datos en Justicia",
         subtitle:
           "Transforme los datos en justicia: su seguridad digital comienza aquí",
         text: "En Gumana Forensics Technologies entendemos que cada byte de información puede ser la clave para resolver un caso, proteger su empresa o asegurar la verdad. Ya sea para investigaciones complejas, protección contra amenazas cibernéticas o recuperación de datos críticos, nuestra tecnología de punta y nuestra experiencia forense están a su disposición.",
@@ -539,7 +539,7 @@ export const translations = {
         {
           id: 1,
           description:
-            "En un mundo cada vez más digital e interconectado, donde la frontera entre lo físico y lo virtual se disuelve, nació Gumana Forensics Technologies, una empresa pionera en la intersección entre tecnología, justicia e innovación. Fundada en 2015, Gumana surgió de la visión de un grupo multidisciplinario de expertos en ciencia forense, ingeniería de software y derecho digital, unidos por la misión de combatir el cibercrimen y descubrir verdades ocultas en un panorama tecnológico complejo. Hoy, la empresa es referencia mundial en soluciones forenses digitales, ofreciendo herramientas avanzadas para investigaciones criminales, protección de datos y análisis de evidencia digital con precisión científica.",
+            "En un mundo cada vez más digital e interconectado, donde la frontera entre lo físico y lo virtual se disuelve, nació Gumana Forensics Technologies, una empresa pionera en la intersección entre tecnología, justicia e innovación. Fundada en 2025, Gumana surgió de la visión de un grupo multidisciplinario de expertos en ciencia forense, ingeniería de software y derecho digital, unidos por la misión de combatir el cibercrimen y descubrir verdades ocultas en un panorama tecnológico complejo. Hoy, la empresa es referencia mundial en soluciones forenses digitales, ofreciendo herramientas avanzadas para investigaciones criminales, protección de datos y análisis de evidencia digital con precisión científica.",
         },
         {
           id: 2,

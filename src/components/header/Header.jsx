@@ -32,6 +32,10 @@ const Header = () => {
     setIsDropdownOpen(false);
   };
 
+  const handleNavigation = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   const handleLogo = () => {
     navigate("/");
   };
@@ -114,19 +118,19 @@ const Header = () => {
             </button>
             <hr className={style.mobileMenuLine} />
             <ul>
-              <li>
+              <li onClick={handleNavigation}>
                 <Link to="/">
                   <BsHouse />
                   {translations[language].header.home}
                 </Link>
               </li>
-              <li>
+              <li onClick={handleNavigation}>
                 <Link to="/about">
                   <BsInfoCircle />
                   {translations[language].header.about}
                 </Link>
               </li>
-              <li>
+              <li onClick={handleNavigation}>
                 <Link to="/contact">
                   <BsPhoneVibrate />
                   {translations[language].header.contact}
