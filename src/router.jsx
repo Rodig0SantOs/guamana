@@ -6,10 +6,10 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Contact from "./page/contact/contact";
 /* import Blog from "./page/blog/Blog"; */
-import Back from "./components/BackToTop/Back";
 import { useEffect } from "react";
 import { LanguageSwitcher } from "./components/languageSwitcher/languageSwitcher";
 import Privacy from "./page/privacy/privacy";
+import ScrollBack from "./components/backToTop/ScrollBack";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -26,7 +26,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <Header />
       <ScrollToTop />
-      <Back />
+      <ScrollBack />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />

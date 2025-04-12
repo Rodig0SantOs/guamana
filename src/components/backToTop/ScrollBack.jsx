@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import style from "./Back.module.css";
 import { BsArrowUp } from "react-icons/bs";
 
-const Back = () => {
+const ScrollBack = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -29,4 +29,4 @@ const Back = () => {
   ) : null;
 };
 
-export default Back;
+export default ScrollBack;
