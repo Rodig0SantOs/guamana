@@ -1,6 +1,7 @@
 import detectiveImg from "../assets/detective.jpg";
 import periciaDigitalImg from "../assets/periciaDigital.jpg";
 import educacaoImg from "../assets/educacao.jpg";
+import condutaDetetive from "../assets/conduta-detetives.png";
 
 // translations.js
 export const translations = {
@@ -58,7 +59,7 @@ export const translations = {
               "Nossa estrutura internacionalmente validada identifica vulnerabilidades, fortalece a resiliência cibernética e protege ativos digitais de forma ágil e assertiva.",
             textp2:
               "Quer soluções sob medida para sua segurança digital? **Conheça a trajetória que nos tornou referência em segurança cibernética!** Visite nossa página ‘Sobre Nós’ e descubra como nossa história, expertise e inovação reforçam cada solução que oferecemos. **Fale conosco** para proteger seus ativos com quem tem décadas de experiência no combate a ameaças digitais.",
-            image: "../../src/img/detective.jpg",
+            image: detectiveImg,
             buttonText: "Quem Somos",
             link: "/about",
           },
@@ -78,7 +79,7 @@ export const translations = {
         subtitle:
           "Transforme Dados em Justiça: Sua Segurança Digital Começa Aqui",
         text: "Na Gumana Forensics Technologies, entendemos que cada byte de informação pode ser a chave para resolver um caso, proteger sua empresa ou garantir a verdade. Seja para investigações complexas, proteção contra ciberameaças ou recuperação de dados críticos, nossa tecnologia de ponta e expertise forense estão à sua disposição.",
-        image: "../../public/image/conduta-detetives.png",
+        image: condutaDetetive,
         buttonText: "Contato",
       },
     },
@@ -249,21 +250,21 @@ export const translations = {
           id: "1",
           title: "Vulnerability analysis: constant monitoring",
           text: "The Vulnerability Analysis service is like a virtual guard, constantly watching over all servers to ensure they are compliant and immune to threats. Using advanced software, our professionals carry out periodic checks, identifying possible loopholes and vulnerabilities. This service operates monthly, providing a layered defense that maintains systems integrity in real time.",
-          image: "../../src/img/detective.jpg",
+          image: detectiveImg,
           buttonText: "Explore our services",
         },
         {
           id: "2",
           title: "Digital Forensics",
           text: "Aimed at lawyers, companies and organizations, this service deals with issues such as legal disputes, data leaks, security incidents, corporate fraud and theft of confidential information. Gumana has the largest forensic laboratory in Brazil, specialized in the preservation, collection and analysis of digital evidence.",
-          image: "../../public/image/periciaDigital.jpg",
+          image: periciaDigitalImg,
           buttonText: "Explore our services",
         },
         {
           id: "3",
           title: "Educational",
           text: "Count on the best and most renowned names in the forensic market to learn about technologies and processes used in information security.",
-          image: "../../public/image/educacao.jpg",
+          image: educacaoImg,
           buttonText: "Explore our services",
         },
       ],
@@ -283,7 +284,7 @@ export const translations = {
               "Our internationally validated framework identifies vulnerabilities, strengthens cyber resilience and protects digital assets in an agile and assertive way.",
             textp2:
               "Do you want tailored solutions for your digital security? **Discover the trajectory that has made us a reference in cybersecurity!** Visit our ‘About Us’ page and discover how our history, expertise and innovation reinforce each solution we offer. **Contact us** to protect your assets with someone who has decades of experience combating digital threats.",
-            image: "../../src/img/detective.jpg",
+            image: detectiveImg,
             buttonText: "Who We Are",
             link: "/about",
           },
@@ -303,7 +304,7 @@ export const translations = {
         subtitle:
           "Transform Data into Justice: Your Digital Security Starts Here",
         text: "At Gumana Forensics Technologies, we understand that every byte of information can be the key to solving a case, protecting your company or ensuring the truth. Whether for complex investigations, protection against cyber threats or recovery of critical data, our cutting-edge technology and forensic expertise are at your disposal.",
-        image: "../../public/image/conduta-detetives.png",
+        image: condutaDetetive,
         buttonText: "Contact",
       },
     },
@@ -472,21 +473,21 @@ export const translations = {
           id: "1",
           title: "Vulnerability analysis: constant monitoring",
           text: "The Vulnerability Analysis service is like a virtual guard, constantly watching over all servers to ensure they are compliant and immune to threats. Using advanced software, our professionals carry out periodic checks, identifying possible loopholes and vulnerabilities. This service operates monthly, providing a layered defense that maintains systems integrity in real time.",
-          image: "../../src/img/detective.jpg",
+          image: detectiveImg,
           buttonText: "Explore our services",
         },
         {
           id: "2",
           title: "Digital Forensics",
           text: "Aimed at lawyers, companies and organizations, this service deals with issues such as legal disputes, data leaks, security incidents, corporate fraud and theft of confidential information. Gumana has the largest forensic laboratory in Brazil, specialized in the preservation, collection and analysis of digital evidence.",
-          image: "../../public/image/periciaDigital.jpg",
+          image: periciaDigitalImg,
           buttonText: "Explore our services",
         },
         {
           id: "3",
           title: "Educational",
           text: "Count on the best and most renowned names in the forensic market to learn about technologies and processes used in information security.",
-          image: "../../public/image/educacao.jpg",
+          image: educacaoImg,
           buttonText: "Explore our services",
         },
       ],
@@ -506,7 +507,7 @@ export const translations = {
               "Nuestro marco validado internacionalmente identifica vulnerabilidades, fortalece la resiliencia cibernética y protege los activos digitales de manera ágil y asertiva.",
             textp2:
               "¿Quieres soluciones a medida para tu seguridad digital? **¡Descubre la trayectoria que nos ha convertido en un referente en ciberseguridad!** Visita nuestra página 'Acerca de nosotros' y descubre cómo nuestra historia, experiencia e innovación refuerzan cada solución que ofrecemos. **Contáctenos** para proteger sus activos con alguien que tiene décadas de experiencia en la lucha contra amenazas digitales.",
-            image: "../../src/img/detective.jpg",
+            image: detectiveImg,
             buttonText: "Quienes somos",
             link: "/about",
           },
@@ -527,7 +528,7 @@ export const translations = {
         subtitle:
           "Transforme los datos en justicia: su seguridad digital comienza aquí",
         text: "En Gumana Forensics Technologies entendemos que cada byte de información puede ser la clave para resolver un caso, proteger su empresa o asegurar la verdad. Ya sea para investigaciones complejas, protección contra amenazas cibernéticas o recuperación de datos críticos, nuestra tecnología de punta y nuestra experiencia forense están a su disposición.",
-        image: "../../public/image/conduta-detetives.png",
+        image: condutaDetetive,
         buttonText: "Contacto",
       },
     },
