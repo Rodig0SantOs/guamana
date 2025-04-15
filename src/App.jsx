@@ -2,7 +2,7 @@
 import "./App.css";
 
 // image
-import detective from "./img/detective.jpg";
+import detective from "./assets/detective.jpg";
 import EmphasisTech from "./components/sections/EmphasisTech";
 import VerticalCardStack from "./components/sections/VerticalCardStack";
 import CallToAction from "./components/sections/CallToAction";

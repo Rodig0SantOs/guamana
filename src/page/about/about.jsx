@@ -1,6 +1,6 @@
 import style from "./about.module.css";
 
-import job from "../../img/job-equip.jpg";
+import job from "../../assets/job-equip.jpg";
 /* import Cards from "../../components/cards/Cards"; */
 import { useLanguage } from "../../context/LanguageProvider";
 import { translations } from "../../utils/translations";

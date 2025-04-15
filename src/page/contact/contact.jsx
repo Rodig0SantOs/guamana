@@ -1,5 +1,5 @@
 import style from "./contact.module.css";
-import contact from "../../img/contact-us.jpg";
+import contact from "../../assets/contact-us.jpg";
 
 import { sendEmail } from "../../utils/mailgridService";
 import { useEffect, useState } from "react";
