@@ -1,3 +1,7 @@
+import detectiveImg from "../assets/detective.jpg";
+import periciaDigitalImg from "../assets/periciaDigital.jpg";
+import educacaoImg from "../assets/educacao.jpg";
+
 // translations.js
 export const translations = {
   pt: {
@@ -20,21 +24,21 @@ export const translations = {
           id: "1",
           title: "Análise de vulnerabilidade: monitoramento constante",
           text: "O serviço de Análise de Vulnerabilidade é como um guarda virtual, constantemente vigiando todos os servidores para garantir que estejam em conformidade e imunes a ameaças. Utilizando softwares avançados, nossos profissionais realizam verificações periódicas, identificando possíveis brechas e vulnerabilidades. Esse serviço opera mensalmente, proporcionando uma defesa em camadas que mantém a integridade dos sistemas em tempo real.",
-          image: "../assets/detective.jpg",
+          image: detectiveImg,
           buttonText: "Explore nossos serviços",
         },
         {
           id: "2",
           title: "Perícia Digital",
           text: "Direcionada a advogados, empresas e organizações, este serviço lida com questões como disputas legais, vazamentos de dados, incidentes de segurança, fraudes corporativas e roubo de informações confidenciais. A Gumana possui o maior laboratório forense do Brasil, especializado na preservação, coleta e análise de evidências digitais.",
-          image: "../assets/periciaDigital.jpg",
+          image: periciaDigitalImg,
           buttonText: "Explore nossos serviços",
         },
         {
           id: "3",
           title: "Educacional",
           text: "Conte com os melhores e mais renomados nomes do mercado forense para aprender sobre tecnologias e processos usados em segurança da informação.",
-          image: "../assets/educacao.jpg",
+          image: educacaoImg,
           buttonText: "Explore nossos serviços",
         },
       ],
